@@ -1,8 +1,7 @@
 from django.forms import ModelForm
-from app.models import Person
-
+from app.models import Perguntas
 # Create the form class.
-class PersonForm(ModelForm):
+class PergForm(ModelForm):
         class Meta:
-             model = Person
-             fields = ["nome", "sobrenome", "email"]
+             model = Perguntas
+             fields = ["pergunta", "resposta", "autor", "resp"]
